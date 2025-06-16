@@ -22,21 +22,21 @@ const promoData = {
     slides: [
       {
         id: 1,
-        image: "/asset/img/Greenwing/FB-doctor copy1.jpg",
+        image: "/asset/Greenwing/promo1.jpg",
         title: "Promotion 1",
         description: "Description",
         link: "https://www.thaihonda.co.th/honda/",
       },
       {
         id: 2,
-        image: "/asset/img/Greenwing/LINE_ALBUM_สื่อ มิถุนายน ริชเมนู-Line OA 26568_250613_1.jpg",
+        image: "/asset/Greenwing/promo2.jpg",
         title: "Promotion 2",
         description: "Description",
         link: "https://www.thaihonda.co.th/honda/",
       },
       {
         id: 3,
-        image: "/asset/img/Greenwing/LINE_ALBUM_สื่อ มิถุนายน ริชเมนู-Line OA 26568_250613_2.jpg",
+        image: "/asset/Greenwing/promo3.jpg",
         title: "Promotion 3",
         description: "Description",
         link: "https://www.thaihonda.co.th/honda/",
@@ -50,21 +50,21 @@ const promoData = {
     slides: [
       {
         id: 1,
-        image: "/asset/img/BigWing/FB-Rebel500_copy.jpg",
+        image: "/asset/BigWing/promo4.jpg",
         title: "Promotion 1",
         description: "Description",
         link: "https://www.thaihonda.co.th/hondabigbike/",
       },
       {
         id: 2,
-        image: "/asset/img/BigWing/LINE_ALBUM_สื่อ มิถุนายน ริชเมนู-Line OA 26568_250610_2.jpg",
+        image: "/asset/BigWing/promo5.jpg",
         title: "Promotion 2",
         description: "Description",
         link: "https://www.thaihonda.co.th/hondabigbike/",
       },
       {
         id: 3,
-        image: "/asset/img/BigWing/messageImage_1748509680702.jpg",
+        image: "/asset/BigWing/promo6.jpg",
         title: "Promotion 3",
         description: "Description",
         link: "https://www.thaihonda.co.th/hondabigbike/",
@@ -78,28 +78,29 @@ const promoData = {
     slides: [
       {
         id: 1,
-        image: "/asset/img/CubHouse/CT125 น้ำมันเครื่อง.png",
+        image: "/asset/CubHouse/promo7.png",
         title: "Promotion 1",
         description: "Description",
         link: "https://www.thaihonda.co.th/cubhouse/",
       },
       {
         id: 2,
-        image: "/asset/img/CubHouse/LINE_ALBUM_สื่อ มิถุนายน ริชเมนู-Line OA 26568_250604_1.jpg",
+        image: "/asset/CubHouse/promo8.jpg",
         title: "Promotion 2",
         description: "Description",
         link: "https://www.thaihonda.co.th/cubhouse/",
       },
       {
         id: 3,
-        image: "/asset/img/CubHouse/LINE_ALBUM_สื่อ มิถุนายน ริชเมนู-Line OA 26568_250609_1.jpg",
+        image: "/asset/CubHouse/promo9.jpg",
         title: "Promotion 3",
         description: "Description",
         link: "https://www.thaihonda.co.th/cubhouse/",
       },
     ],
   },
-}
+};
+
 
 function PromoCarousel({ slides, color }: { slides: PromoSlide[]; color: string }) {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -128,7 +129,7 @@ function PromoCarousel({ slides, color }: { slides: PromoSlide[]; color: string 
               <div className={`bg-gradient-to-br ${color} p-6 h-full flex flex-col justify-between`}>
                 <div>
                   <Image
-                    src={slide.image || "/placeholder.svg"}
+                    src={slide.image}
                     alt={slide.title}
                     width={300}
                     height={300}
